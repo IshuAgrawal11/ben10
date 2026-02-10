@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ben10-app:
+    image: ishu11/ben10-app:latest
+    container_name: ben10-container
+    restart: always
+    ports:
+      - "8000:80"  
+    environment:
+      - NODE_ENV=production
